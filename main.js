@@ -1,9 +1,7 @@
 p5.disableFriendlyErrors = true;
 let data, timeline, randomColors, subscribe;
 function preload() {
-  const urlSearchParams = new URLSearchParams(window.location.search);
-  const params = Object.fromEntries(urlSearchParams.entries());
-  data = loadJSON(params.url);
+  data = loadJSON(dataSource);
   subscribe = loadImage('subscribex.png');
 }
 

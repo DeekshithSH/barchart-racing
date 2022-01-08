@@ -4,6 +4,7 @@ const sourceTitle =
 // Data needs to be a hashmap of {year1:{a:aval1, b:bval1}, year2:{a:aval2, b:bval2}}
 // Aadhar is just a file that contains direct name wise mapping of entitites to a group
 // So that would be like {a:{name:'Pikachu'},{'b':'Charmander'}}
+const dataSource = 'data.json';
 
 const speed = 0.002;
 const numBarsToShow = 15;

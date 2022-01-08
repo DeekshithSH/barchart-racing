@@ -1,47 +1,16 @@
-<!-- <div>
-    <html lang="en">
-
-    <head>
-        <title>Timeline Maker</title>
-        <script>
-            function JSONData() {
-                var name = document.getElementById("url").value;
-                window.location.pathname = `/bar.html?url=${name}`;
-            }
-        </script>
-    </head>
-
-    <body>
-        <form id="myForm" method="post">
-            JSON URL:
-            <input name="url" id="url" type="url"><br>
-            <input type="button" onclick="JSONData();" value="Submit" />
-        </form>
-    </body>
-
-    </html>
-</div> -->
-<!-- <p>Photo by <a href="https://www.pexels.com/@pixabay?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">Pixabay</a> from <a href="https://www.pexels.com/photo/view-of-street-from-a-glass-window-531880/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">Pexels</a></p> -->
-
-<!DOCTYPE html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="./src/main.css">
-    <script>
-        function JSONData() {
-            var url = document.getElementById("url").value;
-            window.location.replace(`bar.html?url=${url}`);
-        }
-    </script>
-</head>
-<body>
-    <div class="container">
-        <form class="form" id="login" method="post">
-            <div class="form__input-group">
-                <input id="url" type="url" class="form__input" autofocus value="https://raw.githubusercontent.com/DeekshithSH/barchart-racing/public/data.json" placeholder="JSON URL" ><br>
-            </div>
-            <button class="form__button" type="button" onclick="JSONData();" value="Submit">Continue</button>
-        </form>
-    </div>
-</body>
+<html lang="en">
+  <head>
+    <title>Timeline Maker</title>
+  </head>
+  <link rel="stylesheet" href="main.css" />
+  <body>
+    <div id="canvas"></div>
+  </body>
+  <script src="config.js"></script>
+  <script src="mappings.js"></script>
+  <script src="helpers.js"></script>
+  <script src="randomColor.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+  <script src="Timeline.js"></script>
+  <script src="main.js"></script>
+</html>
